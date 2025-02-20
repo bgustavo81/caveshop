@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\API\\API.csproj": {}
+    "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\API\\API.csproj": {
+    "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\API\\API.csproj",
+        "projectPath": "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\api\\API.csproj",
         "packagesPath": "C:\\Users\\16783\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\API\\obj\\",
+        "outputPath": "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\16783\\AppData\\Roaming\\NuGet\\NuGet.Config",
