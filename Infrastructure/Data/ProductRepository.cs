@@ -21,8 +21,8 @@ public class ProductRepository(StoreContext context) : IProductsRepository
   public async Task<IReadOnlyList<string>> GetBrandsAsync()
   {
     return await context.Products.Select(x => x.Brand)
-      .Distinct()
-      .ToListAsync();
+        .Distinct()
+        .ToListAsync();
   }
 
   public async Task<Product?> GetProductByIdAsync(int id)
@@ -30,7 +30,8 @@ public class ProductRepository(StoreContext context) : IProductsRepository
     return await context.Products.FindAsync(id);
   }
 
-  public async Task<IReadOnlyList<Product>> GetProductsAsync(string? brand, string? type, string? sort)
+  public async Task<IReadOnlyList<Product>> GetProductsAsync(string? brand,
+      string? type, string? sort)
   {
     var query = context.Products.AsQueryable();
 
@@ -39,6 +40,7 @@ public class ProductRepository(StoreContext context) : IProductsRepository
 
     if (!string.IsNullOrWhiteSpace(type))
       query = query.Where(x => x.Type == type);
+
 
     query = sort switch
     {
