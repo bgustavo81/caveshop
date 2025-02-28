@@ -35,11 +35,12 @@ public class SpecificationEvaluator<T> where T : BaseEntity
     return query;
   }
 
-  public static IQueryable<TResult> GetQuery<TSpec, TResult>(IQueryable<T> query, ISpecification<T, TResult> spec)
+  public static IQueryable<TResult> GetQuery<TSpec, TResult>(IQueryable<T> query,
+      ISpecification<T, TResult> spec)
   {
     if (spec.Criteria != null)
     {
-      query = query.Where(spec.Criteria);
+      query = query.Where(spec.Criteria); // x => x.Brand == brand
     }
 
     if (spec.OrderBy != null)

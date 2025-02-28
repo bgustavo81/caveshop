@@ -14,9 +14,11 @@ public class ProductsController(IGenericRepository<Product> repo) : BaseApiContr
 {
 
   [HttpGet]
-  public async Task<ActionResult<IReadOnlyList<Product>>> GetProducts([FromQuery] ProductSpecParams specParams)
+  public async Task<ActionResult<IReadOnlyList<Product>>> GetProducts(
+      [FromQuery] ProductSpecParams specParams)
   {
     var spec = new ProductSpecification(specParams);
+
     return await CreatePagedResult(repo, spec, specParams.PageIndex, specParams.PageSize);
   }
 

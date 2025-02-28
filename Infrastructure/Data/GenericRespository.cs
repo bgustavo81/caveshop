@@ -63,7 +63,6 @@ public class GenericRespository<T>(StoreContext context) : IGenericRepository<T>
   {
     return await context.SaveChangesAsync() > 0;
   }
-
   public void Update(T entity)
   {
     context.Set<T>().Attach(entity);

@@ -33,7 +33,7 @@ public class ProductSpecParams
     set
     {
       _types = value.SelectMany(x => x.Split(',',
-        StringSplitOptions.RemoveEmptyEntries)).ToList();
+          StringSplitOptions.RemoveEmptyEntries)).ToList();
     }
   }
 
@@ -43,8 +43,9 @@ public class ProductSpecParams
   public string Search
   {
     get => _search ?? "";
-    set => _search = value.ToLowerInvariant();
+    set => _search = value.ToLower();
   }
+
 
 
 }

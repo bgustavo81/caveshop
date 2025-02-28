@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Data;
 
-public class ProductRepository(StoreContext context) : IProductsRepository
+public class ProductRepository(StoreContext context) : IProductRepository
 {
 
   public void AddProduct(Product product)
@@ -31,7 +31,7 @@ public class ProductRepository(StoreContext context) : IProductsRepository
   }
 
   public async Task<IReadOnlyList<Product>> GetProductsAsync(string? brand,
-      string? type, string? sort)
+         string? type, string? sort)
   {
     var query = context.Products.AsQueryable();
 
