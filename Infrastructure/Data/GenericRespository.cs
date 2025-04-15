@@ -1,11 +1,12 @@
 using System;
 using CORE.Entities;
 using CORE.Interfaces;
+using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace Infrastructure.Data;
+namespace Infrastructure;
 
-public class GenericRespository<T>(StoreContext context) : IGenericRepository<T> where T : BaseEntity
+public class GenericRepository<T>(StoreContext context) : IGenericRepository<T> where T : BaseEntity
 {
   public void Add(T entity)
   {
@@ -15,7 +16,9 @@ public class GenericRespository<T>(StoreContext context) : IGenericRepository<T>
   public async Task<int> CountAsync(ISpecification<T> spec)
   {
     var query = context.Set<T>().AsQueryable();
+
     query = spec.ApplyCriteria(query);
+
     return await query.CountAsync();
   }
 
@@ -46,7 +49,7 @@ public class GenericRespository<T>(StoreContext context) : IGenericRepository<T>
 
   public async Task<IReadOnlyList<T>> ListAsync(ISpecification<T> spec)
   {
-    return await context.Set<T>().ToListAsync();
+    return await ApplySpecification(spec).ToListAsync();
   }
 
   public async Task<IReadOnlyList<TResult>> ListAsync<TResult>(ISpecification<T, TResult> spec)
@@ -59,10 +62,6 @@ public class GenericRespository<T>(StoreContext context) : IGenericRepository<T>
     context.Set<T>().Remove(entity);
   }
 
-  public async Task<bool> SaveAllAsync()
-  {
-    return await context.SaveChangesAsync() > 0;
-  }
   public void Update(T entity)
   {
     context.Set<T>().Attach(entity);

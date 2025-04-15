@@ -7,7 +7,6 @@ namespace Infrastructure.Data;
 
 public class ProductRepository(StoreContext context) : IProductRepository
 {
-
   public void AddProduct(Product product)
   {
     context.Products.Add(product);
@@ -31,7 +30,7 @@ public class ProductRepository(StoreContext context) : IProductRepository
   }
 
   public async Task<IReadOnlyList<Product>> GetProductsAsync(string? brand,
-         string? type, string? sort)
+      string? type, string? sort)
   {
     var query = context.Products.AsQueryable();
 
@@ -51,7 +50,6 @@ public class ProductRepository(StoreContext context) : IProductRepository
 
     return await query.ToListAsync();
   }
-
   public async Task<IReadOnlyList<string>> GetTypesAsync()
   {
     return await context.Products.Select(x => x.Type)

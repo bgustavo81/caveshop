@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "bUm1vPqwZHJejLhtNIB7WgmMI8ngxypkYrDApg4MvgQ=",
+  "Hash": "0fUx19/Q0ZvEXvQ4XsxCUp//q557c//RZ8UhkVFM/yg=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "API\\wwwroot",
+      "Source": "API",
+      "ContentRoot": "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

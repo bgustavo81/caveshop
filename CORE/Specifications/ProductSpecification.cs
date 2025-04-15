@@ -11,8 +11,7 @@ public class ProductSpecification : BaseSpecification<Product>
   )
   {
     ApplyPaging(specParams.PageSize * (specParams.PageIndex - 1), specParams.PageSize);
-    System.Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-    System.Console.WriteLine(specParams);
+
     switch (specParams.Sort)
     {
       case "priceAsc":

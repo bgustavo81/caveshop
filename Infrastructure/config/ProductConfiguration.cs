@@ -3,7 +3,7 @@ using CORE.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Infrastructure.config;
+namespace Infrastructure.Config;
 
 public class ProductConfiguration : IEntityTypeConfiguration<Product>
 {
@@ -13,4 +13,3 @@ public class ProductConfiguration : IEntityTypeConfiguration<Product>
     builder.Property(x => x.Name).IsRequired();
   }
 }
-
