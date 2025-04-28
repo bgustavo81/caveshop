@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FHGzx+4m5S4=",
+  "dgSpecHash": "tMUPazSUars=",
   "success": true,
-  "projectFilePath": "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\Core\\CORE.csproj",
+  "projectFilePath": "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\16783\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.7\\microsoft.aspnetcore.cryptography.internal.8.0.7.nupkg.sha512",
     "C:\\Users\\16783\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.7\\microsoft.aspnetcore.cryptography.keyderivation.8.0.7.nupkg.sha512",

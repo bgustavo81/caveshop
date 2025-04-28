@@ -4,12 +4,12 @@
     "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\Core\\CORE.csproj": {
+    "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\Core\\CORE.csproj",
-        "projectName": "CORE",
-        "projectPath": "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\Core\\CORE.csproj",
+        "projectUniqueName": "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\Core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\16783\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\Core\\obj\\",
         "projectStyle": "PackageReference",
@@ -94,8 +94,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\Core\\CORE.csproj": {
-                "projectPath": "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\Core\\CORE.csproj"
+              "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\Core\\Core.csproj"
               }
             }
           }

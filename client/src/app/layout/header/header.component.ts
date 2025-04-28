@@ -14,6 +14,7 @@ import {IsAdminDirective} from "../../shared/directives/is-admin.directive";
 
 @Component({
   selector: 'app-header',
+  standalone: true,
   imports: [
     MatIcon,
     MatButton,

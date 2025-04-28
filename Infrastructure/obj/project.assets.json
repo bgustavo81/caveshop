@@ -1145,17 +1145,17 @@
           }
         }
       },
-      "CORE/1.0.0": {
+      "Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Microsoft.Extensions.Identity.Stores": "8.0.7"
         },
         "compile": {
-          "bin/placeholder/CORE.dll": {}
+          "bin/placeholder/Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CORE.dll": {}
+          "bin/placeholder/Core.dll": {}
         }
       }
     }
@@ -3128,15 +3128,15 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "CORE/1.0.0": {
+    "Core/1.0.0": {
       "type": "project",
-      "path": "../Core/CORE.csproj",
-      "msbuildProject": "../Core/CORE.csproj"
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "CORE >= 1.0.0",
+      "Core >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.6",
       "StackExchange.Redis >= 2.8.0",
@@ -3170,8 +3170,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\Core\\CORE.csproj": {
-              "projectPath": "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\Core\\CORE.csproj"
+            "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\16783\\Desktop\\dotnet\\caveshop\\Core\\Core.csproj"
             }
           }
         }
